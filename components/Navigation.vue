@@ -1,8 +1,8 @@
 <template lang="pug">
   nav
-    router-link(v-for="l in links", :key="l.url" :to="l.url", title="l.title")
-      i.material-icons(v-if="l.icon") {{ l.icon }}
-      span(v-if="l.label") {{ l.label }}
+    router-link(v-for="link in links", :key="link", :to="link.url", :title="link.title")
+      i.material-icons(v-if="link.icon") {{ link.icon }}
+      span.label(v-if="link.label") {{ link.label }}
 </template>
 
 <script>
@@ -10,4 +10,3 @@ export default {
   props: ['links']
 }
 </script>
-
