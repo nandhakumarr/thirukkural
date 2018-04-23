@@ -2,6 +2,7 @@
   <section class="container">
     <div>
       <app-logo/>
+      <demo/>
       <h1 class="title">
         thirukkural
       </h1>
@@ -24,10 +25,12 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import demo from '~/components/demo.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    demo
   }
 }
 </script>
