@@ -161,5 +161,31 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+table
+  border: 1px solid #eee
+  border-collapse: collapse
+  table-layout: auto
+  width: 100%
+  height: 150px
+  caption
+    text-align: left
+    text-transform: capitalize
+    padding: 10px
+  thead
+    display: table-header-group
+    verical-align: middle
+    border-color: inherit
+    background: #eee
+    text-align: left
+  tbody
+    display: table-row-group
+    verical-align: middle
+    border-color: inherit
+    text-align:  left
+  tfoot
+    display: table-header-group
+    verical-align: middle
+    border-color: inherit
+    background: #eee
+    text-align: left
 </style>
