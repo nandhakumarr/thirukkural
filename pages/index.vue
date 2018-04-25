@@ -34,5 +34,7 @@ export default {
     @include fixed-top
     background: #f4eec0
     padding: 2px
+    //- opacity: 0.7
+    //- filter: alpha (opacity=80)
 </style>
 
