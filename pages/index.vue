@@ -2,11 +2,13 @@
   section.container
     header
       headernav.head(:navigations="Navigation")
+    headcont.section(:subject="Headcont")
 </template>
 
 
 <script>
-import Headernav from '~/components/Headernav.vue'
+import Headernav from '~/components/Headernav'
+import Headcont from '~/components/Headcont'
 
 export default {
   data () {
@@ -17,16 +19,21 @@ export default {
         { title: "Services", label: "Services", url: 'services' },
         { title: "Products", label: "Products", url: 'products' }
       ],
-      url: './assets/agaram-logo.png'
+      url: './assets/agaram-logo.png',
+      Headcont: [
+        { title: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
+      ] 
     }
   },
   components: {
-    Headernav
+    Headernav,
+    Headcont
   }
 }
+
 </script>
 
-<style <style lang="sass" scoped>
+<style lang="sass" scoped>
 @import 'assets/styles/mixins'
 .container
   padding-top: 4rem
