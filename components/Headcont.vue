@@ -1,0 +1,32 @@
+<template lang="pug">
+section
+  div#content
+    div.kural
+      router-kural(v-for="sub in subject", :key="sub.url", :to="sub.url", :title="sub.title")
+        h1 {{ sub.title }}
+</template>
+
+<script>
+export default {
+  props: ['subject'],
+  data () {
+    return {
+    }
+  }
+}
+</script>
+
+<style lang="sass" scoped>
+section
+  #content
+    width: 100%
+    height: 60px
+    .kural
+      margin: 50px auto
+      h1
+      text-align: center
+      color: #565866
+      font-size: 30px
+      line-height: 50px
+
+</style>
