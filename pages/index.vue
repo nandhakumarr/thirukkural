@@ -2,8 +2,8 @@
   section.container
     header
       headernav.head(:navigations="Navigation")
-    carousel
     headcont.section(:subject="Headcont")
+    carousel
 </template>
 
 
