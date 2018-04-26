@@ -2,6 +2,7 @@
 section
   div#content
     div.kural
+      router-kural(v-for="sub in subject")
         h1 {{ sub.text }}
 </template>
 
