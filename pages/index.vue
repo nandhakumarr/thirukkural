@@ -2,26 +2,27 @@
   section.container
     header
       headernav.head(:navigations="Navigation")
+    carousel
 </template>
 
 
 <script>
 import Headernav from '~/components/Headernav.vue'
+import Carousel from '~/components/Carousel.vue'
 
 export default {
   data () {
     return {
       Navigation: [
         { title: "Home", label: "Home", url: 'home' },
-        { title: "About", label: "About", url: 'about' },
-        { title: "Services", label: "Services", url: 'services' },
-        { title: "Products", label: "Products", url: 'products' }
-      ],
-      url: './assets/agaram-logo.png'
+        { title: "Content", label: "Content", url: 'Content'},
+        { title: "About", label: "About", url: 'About' },
+      ]
     }
   },
   components: {
-    Headernav
+    Headernav,
+    Carousel
   }
 }
 </script>
@@ -32,8 +33,8 @@ export default {
   padding-top: 4rem
   .head
     @include fixed-top
-    background: #f4eec0
-    padding: 2px
+    //- background: #f4eec0
+    // -padding: 2px
     //- opacity: 0.7
     //- filter: alpha (opacity=80)
 </style>
