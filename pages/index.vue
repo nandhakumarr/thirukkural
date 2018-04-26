@@ -21,7 +21,7 @@ export default {
       ],
       url: './assets/agaram-logo.png',
       Headcont: [
-        { title: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
+        { text: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
       ] 
     }
   },
@@ -37,6 +37,8 @@ export default {
 @import 'assets/styles/mixins'
 .container
   padding-top: 4rem
+  width: 100%
+  height: auto
   .head
     @include fixed-top
     background: #f4eec0

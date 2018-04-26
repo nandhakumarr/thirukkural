@@ -2,8 +2,7 @@
 section
   div#content
     div.kural
-      router-kural(v-for="sub in subject", :key="sub.url", :to="sub.url", :title="sub.title")
-        h1 {{ sub.title }}
+        h1 {{ sub.text }}
 </template>
 
 <script>

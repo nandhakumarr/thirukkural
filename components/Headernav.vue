@@ -1,12 +1,12 @@
 <template lang="pug">
-nav
-  div#header
-    div#log
-      img#logo(src="http://agaram.xyz/wp-content/uploads/2015/05/agaram-logo-min.png", alt="")
-    div#link
-      router-link(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
-        button.label {{ nav.label }}
-      input.box(type="search", placeholder="Search..", name="search")
+  nav
+    div#header
+      div#log
+        img#logo(src="http://agaram.xyz/wp-content/uploads/2015/05/agaram-logo-min.png", alt="")
+      div#link
+        router-link(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
+          button.label {{ nav.label }}
+        input.box(type="search", placeholder="Search..", name="search")
 </template>
 
 <script>
@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
+
 nav
   #header
     width: 100%
