@@ -1,12 +1,12 @@
 <template lang="pug">
-div.header
-  div.header-logo
-    img#logoimg(src="http://agaram.xyz/wp-content/uploads/2015/05/agaram-logo-min.png", alt="")
-  div#link
-    router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
-      span.label {{ nav.label }}
-    input.box(type="search", placeholder="Search..", name="search")
-  //-iframe( width="100%" height="480" src="https://www.youtube.com/embed/A89_enDDJn0" frameborder="0" allow="autoplay encrypted-media" allowfullscreen)
+  nav
+    div#header
+      div#log
+        img#logo(src="http://agaram.xyz/wp-content/uploads/2015/05/agaram-logo-min.png", alt="")
+      div#link
+        router-link(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
+          button.label {{ nav.label }}
+        input.box(type="search", placeholder="Search..", name="search")
 </template>
 
 <script>
