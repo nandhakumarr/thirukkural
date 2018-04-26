@@ -21,9 +21,9 @@ export default {
       ],
       url: './assets/agaram-logo.png',
       Headcont: [
-      HEAD
-        { title: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
+        { text: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
       ]
+    }
   },
   components: {
     Headernav,
