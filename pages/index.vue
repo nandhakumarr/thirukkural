@@ -4,6 +4,7 @@
       headernav.head(:navigations="Navigation")
     headcont.section(:subject="Headcont")
     carousel
+    card
 </template>
 
 
@@ -11,6 +12,7 @@
 import Headernav from '~/components/Headernav.vue'
 import Carousel from '~/components/Carousel.vue'
 import Headcont from '~/components/Headcont'
+import Card from '~/components/Card'
 
 export default {
   data () {
@@ -28,7 +30,8 @@ export default {
   components: {
     Headernav,
     Carousel,
-    Headcont
+    Headcont,
+    Card
   }
 }
 

@@ -1,7 +1,7 @@
 <template lang="pug">
 div.header
   div.header-logo
-    img#logoimg(src="http://agaram.xyz/wp-content/uploads/2015/05/agaram-logo-min.png", alt="")
+    img#logoimg(src="https://lh3.googleusercontent.com/-kvwrkoXO-Wk/WuLxl4ygefI/AAAAAAAABtI/ay84BvBdoAY9bPcUEa1oDTuZJl5daKikgCK8BGAs/s100/2018-04-27.png", alt="")
   div#link
     router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
       span.label {{ nav.label }}
@@ -18,6 +18,13 @@ export default {
   }
 }
 </script>
+￼Home
+￼Content
+￼About
+￼
+Search..
+அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.
+HIII
 
 <style lang="sass" scoped>
 .header

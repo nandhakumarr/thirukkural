@@ -17,7 +17,12 @@ div.content
       div.carousel-inner
         div.carousel-item(style="background-color: #850000")
           div.center
-            div.title Hiii
+            div.title
+              | குறள் 1:
+              br
+              | அகர முதல எழுத்தெல்லாம் ஆதி
+              br
+              | பகவன் முதற்றே உலகு.
         div.carousel-item(style="background-color: #24529c")
           div.center
             div.title Keerthi
@@ -36,13 +41,13 @@ export default {
 
 <style lang="sass" scoped>
 .content
-  position: fixed
+  position: relative
   top: 79px
   right: 0
   left: 0
   bottom: 0
   .carousel
-    height: 100%
+    height: 500px
   .carousel .carousel-slides,
   .carousel .carousel-inner,
   .carousel .carousel-item
@@ -110,9 +115,9 @@ export default {
     display: table-cell
     vertical-align: middle
     color: #fff
-    font-size: 70px
+    font-size: 50px
     height: 100px
-    font-weight: 900
+    font-weight: 700
     letter-spacing: 10px
     text-transform: uppercase
     background-color: rgba(0, 0, 0, 0.3)
