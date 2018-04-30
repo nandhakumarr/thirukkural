@@ -1,7 +1,6 @@
 <template lang="pug">
   sub
-    router-sub(v-for="sub in subject")
-      text {{ sub.content }}
+    content-sub(v-for="sub in subject")
 </template>
 
 <script>
