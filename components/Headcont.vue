@@ -2,7 +2,11 @@
 section
   div#content
     div.kural
+<<<<<<< HEAD
       content-kural(v-for="sub in subject")
+=======
+      router-kural(v-for="sub in subject", :key="sub")
+>>>>>>> 049f7a659830d0e8f1ea0d244d4e91793328416a
         h1 {{ sub.text }}
 </template>
 

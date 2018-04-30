@@ -3,23 +3,25 @@
     header
       headernav.head(:navigations="Navigation")
     headcont.section(:subject="Headcont")
+    carousel
+    card
 </template>
 
 
 <script>
-import Headernav from '~/components/Headernav'
+import Headernav from '~/components/Headernav.vue'
+import Carousel from '~/components/Carousel.vue'
 import Headcont from '~/components/Headcont'
+import Card from '~/components/Card'
 
 export default {
   data () {
     return {
       Navigation: [
         { title: "Home", label: "Home", url: 'home' },
-        { title: "About", label: "About", url: 'about' },
-        { title: "Services", label: "Services", url: 'services' },
-        { title: "Products", label: "Products", url: 'products' }
+        { title: "Content", label: "Content", url: 'Content'},
+        { title: "About", label: "About", url: 'About' },
       ],
-      url: './assets/agaram-logo.png',
       Headcont: [
         { text: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
       ]
@@ -27,7 +29,9 @@ export default {
   },
   components: {
     Headernav,
-    Headcont
+    Carousel,
+    Headcont,
+    Card
   }
 }
 
@@ -41,8 +45,8 @@ export default {
   height: auto
   .head
     @include fixed-top
-    background: #42f47a
-    padding: 2px
+    //- background: #f4eec0
+    // -padding: 2px
     //- opacity: 0.7
     //- filter: alpha (opacity=80)
 </style>
