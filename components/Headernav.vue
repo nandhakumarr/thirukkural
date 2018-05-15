@@ -5,7 +5,9 @@ div.header
   div#link
     router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
       span.label {{ nav.label }}
-    input.box(type="search", placeholder="Search..", name="search")
+    div#search
+      input.box(type="search", placeholder="What are you looking for?", name="search")
+      input.search(type="submit", value="Rechercher")
   //-iframe( width="100%" height="480" src="https://www.youtube.com/embed/A89_enDDJn0" frameborder="0" allow="autoplay encrypted-media" allowfullscreen)
 </template>
 
@@ -21,6 +23,8 @@ export default {
 ￼Home
 ￼Content
 ￼About
+Login
+Signup
 ￼
 Search..
 அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.
@@ -37,12 +41,12 @@ HIII
   border-bottom: 1px solid #ededed
 .header .header-logo
   float: left
-  margin: 0 0 0 15px
+  margin: 0 320px 0 15px
   #logoimg
     width: 100px
     height: 70px
 #link
-  display: flex
+  display: block
   justify-content: center
   .router
     border-left: 1px solid #ededed
@@ -50,29 +54,61 @@ HIII
     font-size: 18px
     line-height: 78px
     padding: 0 35px
-    display: block
+    display: inline-block
     color: #000
     text-decoration: none
     &:hover
       background-color: #f5f5f3
-  input.box
-    margin-top: 10px
-    margin-bottom: 5px
-    margin-left: 400px
-    outline: none
-  input
-    width: 130px
-    box-sizing: border-box
-    border: 2px solid #ccc
-    border-radius: 2px
-    font-size: 16px
-    background-color: white
-    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png')
-    background-position: 10px 17px
-    background-repeat: no-repeat
-    padding: 12px 20px 12px 40px
-    -webkit-transition: width 0.4s ease-in-out
-    transition: width 0.4s ease-in-out
-  input:focus
-    width: 100%
+  #search
+    margin: 10px 30px
+    display: inline-block
+    position: relative
+    float: right
+    padding: 0
+    input.box
+      height: 60px
+      font-size: 15px
+      display: inline-block
+      font-weight: 50
+      border: none
+      outline: none
+      color: #555
+      padding: 3px
+      padding-right: 60px
+      width: 0px
+      position: absolute
+      top: 0
+      right: 0
+      background: none
+      z-index: 3
+      transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000)
+      cursor: pointer
+    input:focus 
+      width: 280px
+      z-index: 1
+      border-bottom: 1px solid #BBB
+      cursor: text
+    input:focus:hover
+      border-bottom: 1px solid #BBB q 
+    input.search
+      height: 60px
+      width: 63px
+      display: inline-block
+      color:red
+      float: right
+      background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png') center center no-repeat
+      text-indent: -10000px
+      border: none
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 2
+      cursor: pointer
+      opacity: 0.4
+      cursor: pointer
+      outline: none
+      transition: opacity .4s ease
+    input.search:hover 
+      opacity: 0.8
+
 </style>

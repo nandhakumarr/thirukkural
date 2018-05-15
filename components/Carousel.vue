@@ -42,7 +42,8 @@ export default {
 <style lang="sass" scoped>
 .content
   position: relative
-  top: 79px
+  top: 20px
+  z-index: -999
   right: 0
   left: 0
   bottom: 0

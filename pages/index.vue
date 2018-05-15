@@ -2,7 +2,7 @@
   section.container
     header
       headernav.head(:navigations="Navigation")
-    headcont.section(:subject="Headcont")
+      headcont
     carousel
     card
 </template>
@@ -11,26 +11,24 @@
 <script>
 import Headernav from '~/components/Headernav.vue'
 import Carousel from '~/components/Carousel.vue'
-import Headcont from '~/components/Headcont'
-import Card from '~/components/Card'
+import Card from '~/components/Card.vue'
 
 export default {
   data () {
     return {
       Navigation: [
-        { title: "Home", label: "Home", url: 'home' },
-        { title: "Content", label: "Content", url: 'Content'},
-        { title: "About", label: "About", url: 'About' },
-      ],
-      Headcont: [
-        { text: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
+        { title: "Home", label: "Home", url: '#' },
+        { title: "Content", label: "Content", url: '#'},
+        { title: "About", label: "About", url: '#' },
+        { title: "Login", label: "Login", url: '#' },
+        { title: "Signup", label: "Signup", url: '#' }
+
       ]
     }
   },
-  components: {
+components: {
     Headernav,
     Carousel,
-    Headcont,
     Card
   }
 }
