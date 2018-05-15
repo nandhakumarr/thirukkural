@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
 <div id="wrap">
   <form action="" autocomplete="on">
@@ -5,6 +6,14 @@
   <input id="search_submit" value="Rechercher" type="submit">
   </form>
 </div>
+=======
+<template lang="pug">
+section
+  div#content
+    div.kural
+      router-kural(v-for="sub in subject", :key="sub.text")
+        h1 {{ sub.text }}
+>>>>>>> 6f5a4b61c07eda4e66548907dd76fe2307f1b073
 </template>
 
 <script>
