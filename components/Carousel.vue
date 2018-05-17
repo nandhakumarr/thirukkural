@@ -45,7 +45,8 @@ export default {
   height: 300px
   float: left
   position: relative
-  top: 15px
+  top: 20px
+  z-index: -999
   right: 0
   left: 0
   bottom: 0
