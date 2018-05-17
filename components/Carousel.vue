@@ -41,8 +41,11 @@ export default {
 
 <style lang="sass" scoped>
 .content
+  width: 62.2rem
+  height: 300px
+  float: left
   position: relative
-  top: 79px
+  top: 15px
   right: 0
   left: 0
   bottom: 0

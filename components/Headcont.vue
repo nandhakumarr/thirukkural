@@ -28,5 +28,4 @@ section
       color: #565866
       font-size: 30px
       line-height: 50px
-
 </style>

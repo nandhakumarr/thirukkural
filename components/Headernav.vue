@@ -1,7 +1,7 @@
 <template lang="pug">
 div.header
   div.header-logo
-    img#logoimg(src="https://lh3.googleusercontent.com/-kvwrkoXO-Wk/WuLxl4ygefI/AAAAAAAABtI/ay84BvBdoAY9bPcUEa1oDTuZJl5daKikgCK8BGAs/s100/2018-04-27.png", alt="")
+    img#logoimg(src="https://lh3.googleusercontent.com/-lRuIypOTaLE/WubID5P9LqI/AAAAAAAABt8/0K5GgzHMGxESWx3E4xkUq33ly5Is1rAFQCK8BGAs/s100/2018-04-30.png", alt="")
   div#link
     router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
       span.label {{ nav.label }}
@@ -18,23 +18,15 @@ export default {
   }
 }
 </script>
-￼Home
-￼Content
-￼About
-￼
-Search..
-அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.
-HIII
 
 <style lang="sass" scoped>
 .header
-  background-color: #fff
-  position: fixed
-  top: 0
-  right: 0
-  left: 0
-  height: 78px
-  border-bottom: 1px solid #ededed
+  background-color: transparent
+  box-shadow: none
+  max-width: 1200px
+  width: 100%
+  margin: 20px auto 0
+  padding: 0 24px
 .header .header-logo
   float: left
   margin: 0 0 0 15px
@@ -70,7 +62,7 @@ HIII
     background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png')
     background-position: 10px 17px
     background-repeat: no-repeat
-    padding: 12px 20px 12px 40px
+    padding: 10px 20px 10px 40px
     -webkit-transition: width 0.4s ease-in-out
     transition: width 0.4s ease-in-out
   input:focus

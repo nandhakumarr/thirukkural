@@ -6,7 +6,7 @@ main.cards
       h3  hii
       p Welcome
   article.card
-    img( src="https://www168.lunapic.com/do-not-link-here-use-hosting-instead/152483051439734369?2001255909" alt="Sample photo")
+    img( src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPV8-bbsneUrLpW2x25O1S8pw7LlMYS27kYKicjcFyBUz1MocC" alt="Sample photo")
     div.text
       h3  Hello
       p mmrmgpotgpok

@@ -2,17 +2,16 @@
   section.container
     header
       headernav.head(:navigations="Navigation")
-    headcont.section(:subject="Headcont")
     carousel
-    card
+    aside
+      h4 This is aside
 </template>
 
 
 <script>
 import Headernav from '~/components/Headernav.vue'
 import Carousel from '~/components/Carousel.vue'
-import Headcont from '~/components/Headcont'
-import Card from '~/components/Card'
+// import Card from '~/components/Card'
 
 export default {
   data () {
@@ -21,17 +20,13 @@ export default {
         { title: "Home", label: "Home", url: 'home' },
         { title: "Content", label: "Content", url: 'Content'},
         { title: "About", label: "About", url: 'About' },
-      ],
-      Headcont: [
-        { text: 'அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.' }
       ]
     }
   },
   components: {
     Headernav,
     Carousel,
-    Headcont,
-    Card
+    //- Card
   }
 }
 
@@ -49,5 +44,15 @@ export default {
     // -padding: 2px
     //- opacity: 0.7
     //- filter: alpha (opacity=80)
+  aside
+    background: #fff
+    float: right
+    height: 700px
+    width: 18rem
+    border-left: 1px solid #EEE
+    h4
+      color: #8c8475
+      padding: 25px
+      text-align: center
 </style>
 
