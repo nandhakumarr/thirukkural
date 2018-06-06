@@ -20,7 +20,7 @@ export default {
   props: ['navigations'],
   data () {
     return {
-      logo: 'https://lh3.googleusercontent.com/-lRuIypOTaLE/WubID5P9LqI/AAAAAAAABt8/0K5GgzHMGxESWx3E4xkUq33ly5Is1rAFQCK8BGAs/s100/2018-04-30.png',
+      logo: 'https://lh3.googleusercontent.com/-X3n_0ISlcow/WxeZVeMbJaI/AAAAAAAABwY/sFrfA-3aFXsg5MknMqiKnQ1PoqhJGxWMgCL0BGAYYCw/h53/2018-06-06.png',
       facebook: 'http://www.ssccardinals.org/assets/images/Images/Social-Media-Icons/Facebook-Icon.png',
       twitter: 'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png',
       instagram: 'http://pngimg.com/uploads/instagram/instagram_PNG3.png',
@@ -39,9 +39,10 @@ export default {
   padding: 0 24px
 .header .header-logo
   float: left
+  padding: 30px
   #logoimg
-    width: 100px
-    height: 70px
+    width: 114px
+    height: 39px
 .search
   width: 300px
   display: flex
@@ -71,6 +72,7 @@ input
       outline: none
       background-color: #fff
       border-bottom: 1px solid #EEE
+      cursor: pointer
   &:-moz-placeholder, &::-webkit-input-placeholder
     color: #999
     border-bottom: 1px solid #EEE
