@@ -34,11 +34,11 @@ export default {
     margin-left: 200px
     font-size: $heading-font-size
     font-weight: 600
-    color: #FFF
+    color: #000
   .kural
     line-height: 38px
     p
-      color: #FFF
+      color: #000
       margin-left: 200px
       margin-top: 20px
       font-size: $paragraph-font-size

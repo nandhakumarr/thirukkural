@@ -3,7 +3,7 @@ section.container
   header
     headernav.head(:navigations="Navigation")
   carousel
-  kural
+  kural.kuralgal
 </template>
 
 
@@ -35,16 +35,21 @@ body
   font-family: $font-family
   color: #FFF
 .container
-  background-image: url('https://lh3.googleusercontent.com/-Rae6L03AIyY/WxTT-jV5xzI/AAAAAAAABwI/LDNm52FDlLQDyvDOMt0UsNpWjPPRIXHCQCL0BGAYYCw/h3641/2018-06-03.jpg')
   padding-top: 4rem
   width: 100%
-  height: auto
   .head
     @include fixed-top
     //- background: #f4eec0
     // -padding: 2px
     //- opacity: 0.7
     //- filter: alpha (opacity=80)
+    margin: auto;
+    z-index: 10000;
+    /* padding: 2rem 0; */
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(225, 229, 232, 0.5);
+    box-shadow: 0 0.25rem 1rem 0.15rem rgba(152, 150, 150, 0.1);
+    transition: all 0.2s;
   aside
     background: #fff
     float: right

@@ -5,7 +5,7 @@ div.header
     //- div#link
       router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
         span.label {{ nav.label }}
-  div.search
+  //-div.search
     input(type="search", placeholder="தேடல்")
   //-iframe( width="100%" height="480" src="https://www.youtube.com/embed/A89_enDDJn0" frameborder="0" allow="autoplay encrypted-media" allowfullscreen)
   div.social
@@ -20,7 +20,7 @@ export default {
   props: ['navigations'],
   data () {
     return {
-      logo: 'https://lh3.googleusercontent.com/-X3n_0ISlcow/WxeZVeMbJaI/AAAAAAAABwY/sFrfA-3aFXsg5MknMqiKnQ1PoqhJGxWMgCL0BGAYYCw/h53/2018-06-06.png',
+      logo: 'https://lh3.googleusercontent.com/-ElZXixJm1sI/WubHL4AdYeI/AAAAAAAABt4/MkgVr6z-65kCQLGtcCIhz_EQS0sEkDQqACL0BGAYYCw/h80/2018-04-30.png',
       facebook: 'http://www.ssccardinals.org/assets/images/Images/Social-Media-Icons/Facebook-Icon.png',
       twitter: 'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png',
       instagram: 'http://pngimg.com/uploads/instagram/instagram_PNG3.png',
@@ -33,7 +33,7 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/config/typography'
 .header
-  max-width: 1200px
+  border-bottom: 1px solid #EEE
   width: 100%
   margin: 20px auto 0
   padding: 0 24px
@@ -41,8 +41,8 @@ export default {
   float: left
   padding: 30px
   #logoimg
-    width: 114px
-    height: 39px
+    width: 90px
+    height: 50px
 .search
   width: 300px
   display: flex
@@ -82,7 +82,7 @@ input
   align-items: flex-end
   justify-content: flex-end
   align-content: end
-  margin: -30px
+  margin: 39px
   #medialogo
     width: 30px
     height: 30px
