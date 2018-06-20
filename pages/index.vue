@@ -4,6 +4,7 @@ section.container
     headernav.head(:navigations="Navigation")
   carousel
   kural.kuralgal
+  Adhigaram
 </template>
 
 
@@ -11,6 +12,7 @@ section.container
 import Headernav from '~/components/Headernav.vue'
 import Carousel from '~/components/Carousel.vue'
 import Kural from '~/components/Kural.vue'
+import Adhigaram from '~/components/Adhigaram.vue'
 export default {
   data () {
     return {
@@ -22,7 +24,8 @@ export default {
 components: {
     Headernav,
     Carousel,
-    Kural
+    Kural,
+    Adhigaram
   }
 }
 
