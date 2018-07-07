@@ -11,7 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Catamaran'}
     ]
   },
   /*
@@ -20,6 +21,9 @@ module.exports = {
   loading: { color: '#3B8070' },
   /*
   ** Build configuration
+  */
+  /*
+  ** Global Css
   */
   build: {
     /*
@@ -34,6 +38,8 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      //config.resolve.alias['~src'] = projectSrc
+      //config.resolve.alias['~utils'] = path.join(projectSrc, 'utils')
     }
   }
 }
