@@ -3,7 +3,7 @@ div.header
   div.header-logo
     img#logoimg(src="https://lh3.googleusercontent.com/-kvwrkoXO-Wk/WuLxl4ygefI/AAAAAAAABtI/ay84BvBdoAY9bPcUEa1oDTuZJl5daKikgCK8BGAs/s100/2018-04-27.png", alt="")
   div#link
-    router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
+    //- router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
       span.label {{ nav.label }}
     div#search
       input.box(type="search", placeholder="What are you looking for?", name="search")
@@ -20,11 +20,7 @@ export default {
   }
 }
 </script>
-￼Home
-￼Content
-￼About
-Login
-Signup
+
 ￼
 Search..
 அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.
@@ -41,7 +37,7 @@ HIII
   border-bottom: 1px solid #ededed
 .header .header-logo
   float: left
-  margin: 0 320px 0 15px
+  margin: 0 120px 0 15px
   #logoimg
     width: 100px
     height: 70px
@@ -63,7 +59,7 @@ HIII
     margin: 10px 30px
     display: inline-block
     position: relative
-    float: right
+    float: left
     padding: 0
     input.box
       height: 60px
@@ -89,13 +85,12 @@ HIII
       border-bottom: 1px solid #BBB
       cursor: text
     input:focus:hover
-      border-bottom: 1px solid #BBB q 
+      border-bottom: 1px solid #BBB
     input.search
       height: 60px
       width: 63px
       display: inline-block
-      color:red
-      float: right
+      float: left
       background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png') center center no-repeat
       text-indent: -10000px
       border: none

@@ -5,6 +5,7 @@
       headcont
     carousel
     card
+    Ui
 </template>
 
 
@@ -12,6 +13,7 @@
 import Headernav from '~/components/Headernav.vue'
 import Carousel from '~/components/Carousel.vue'
 import Card from '~/components/Card.vue'
+import Ui from '~/components/Ui.vue'
 
 export default {
   data () {
@@ -29,7 +31,8 @@ export default {
 components: {
     Headernav,
     Carousel,
-    Card
+    Card,
+    Ui
   }
 }
 
