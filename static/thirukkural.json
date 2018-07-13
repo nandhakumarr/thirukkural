@@ -1,5 +1,4 @@
-{
-  "kural": [
+[
     {
       "Number": 1,
       "Line1": "அகர முதல எழுத்தெல்லாம் ஆதி",
@@ -17290,6 +17289,4 @@
       "transliteration1": "Ootudhal Kaamaththirku Inpam Adharkinpam",
       "transliteration2": "Kooti Muyangap Perin"
     }
-  ],
-  "repo": "http://github.com/tk120404/thirukkural"
-}
+  ]
