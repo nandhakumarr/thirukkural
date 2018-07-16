@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import 'assets/styles/config/typography'
+@import 'assets/styles/thirukkural'
 .header
   border-bottom: 1px solid #EEE
   width: 100%
@@ -43,39 +43,6 @@ export default {
   #logoimg
     width: 90px
     height: 50px
-.search
-  width: 300px
-  display: flex
-  margin-top: 22px
-  margin-left: 280px
-  border-bottom: 1px solid #EEE
-  font-family: $font-family
-
-input
-  outline: none
-  &[type=search]
-  -webkit-appearance: textfield
-  -webkit-box-sizing: content-box
-  font-size: 100%
-  &::-webkit-search-decoration, &::-webkit-search-cancel-button
-    display: none
-  &[type=search]
-    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png') no-repeat 9px center
-    border: none
-    padding: 9px 10px 9px 50px
-    width: 125px
-    -webkit-transition: all .5s
-    -moz-transition: all .5s
-    transition: all .5s
-    &:focus
-      width: 240px
-      outline: none
-      background-color: #fff
-      border-bottom: 1px solid #EEE
-      cursor: pointer
-  &:-moz-placeholder, &::-webkit-input-placeholder
-    color: #999
-    border-bottom: 1px solid #EEE
 .social
   display: flex
   flex-direction: row

@@ -1,0 +1,69 @@
+$form-input-font-weight: 700 !default
+$form-input-font: $font !default
+$form-input-font-size: inherit !default
+$form-input-border: $neutral !default
+$form-input-border-focus: $form-input-focus-border !default
+$form-input-padding: $form-input-padding !default
+
+@mixin form-input
+  @include reset
+  @include theme($form-input-bg, $form-input-fg)
+  font-family: $form-input-font
+  font-size: $form-input-font-size
+  font-weight: $form-input-font-weight
+  padding: $form-input-padding
+  border-width: 1px
+  border-style: solid
+  border-color: $form-input-border
+  appearance: none
+  background: transparent
+  color: inherit
+  &:focus
+    border-color: $form-input-border-focus
+
+input[type='date'],
+input[type='datetime'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input[type='search'],
+input[type='file']
+  @include form-input
+  padding: $form-input-padding !important
+  font-weight: $form-input-font-weight !important
+
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+input[type='image'],
+button
+  @include reset
+  @include form-input
+  @include theme($action-fg, $action-bg)
+  border-color: $button-border
+  cursor: pointer
+  &:hover
+    @include theme($action-hover-fg, $action-hover-bg)
+  &:focus
+    border-color: $button-focus-border
+
+select
+  @include form-input
+
+*[contenteditable]
+  @include form-input
+
+textarea
+  @include form-input
+  width: 15rem
+  height: 5rem
+
+input[type='checkbox'],
+input[type='radio']
+  margin-right: $space/4

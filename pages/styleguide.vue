@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import 'assets/styles/mixins'
+@import 'assets/styles/thirukkural'
 .page.styleguide
   padding-left: 4rem
   nav.primary
@@ -33,7 +33,7 @@ export default {
 </style>
 
 <style lang="sass">
-@import 'assets/styles/mixins'
+@import 'assets/styles/thirukkural'
 .page.styleguide
   main
     background: #FFFFFF

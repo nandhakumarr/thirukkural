@@ -12,9 +12,12 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Catamaran'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Pavanam&amp;subset=latin-ext,tamil' }
     ]
   },
+  css: [
+    '@/assets/styles/thirukkural.sass'
+  ],
   /*
   ** Customize the progress bar color
   */

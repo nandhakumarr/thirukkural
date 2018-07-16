@@ -1,0 +1,17 @@
+body
+  background: $neutral-light
+
+.page
+  padding-top: $header-height
+
+.page >
+  header, main, footer
+    >
+    .container
+      max-width: $page-width
+      margin: 0 auto
+      padding: $space/2 0
+
+h1, h2, h3, h4, h5, h6, p
+  &:first-child
+    margin-top: 0
