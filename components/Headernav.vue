@@ -29,14 +29,6 @@ export default {
   }
 }
 </script>
-<<<<<<< HEAD
-
-￼
-Search..
-அகர முதல எழுத்தெல்லாம் ஆதி பகவன் முதற்றே உலகு.
-HIII
-=======
->>>>>>> a0e8ce9bb7898e1ba190d3ae153859ec1f8ad06f
 
 <style lang="sass" scoped>
 @import 'assets/styles/config/typography'
@@ -47,7 +39,6 @@ HIII
   padding: 0 24px
 .header .header-logo
   float: left
-<<<<<<< HEAD
   margin: 0 120px 0 15px
   #logoimg
     width: 100px
@@ -111,41 +102,6 @@ HIII
       z-index: 2
       cursor: pointer
       opacity: 0.4
-=======
-  padding: 30px
-  #logoimg
-    width: 90px
-    height: 50px
-.search
-  width: 300px
-  display: flex
-  margin-top: 22px
-  margin-left: 280px
-  border-bottom: 1px solid #EEE
-  font-family: $font-family
-
-input
-  outline: none
-  &[type=search]
-  -webkit-appearance: textfield
-  -webkit-box-sizing: content-box
-  font-size: 100%
-  &::-webkit-search-decoration, &::-webkit-search-cancel-button
-    display: none
-  &[type=search]
-    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-24.png') no-repeat 9px center
-    border: none
-    padding: 9px 10px 9px 50px
-    width: 125px
-    -webkit-transition: all .5s
-    -moz-transition: all .5s
-    transition: all .5s
-    &:focus
-      width: 240px
-      outline: none
-      background-color: #fff
-      border-bottom: 1px solid #EEE
->>>>>>> a0e8ce9bb7898e1ba190d3ae153859ec1f8ad06f
       cursor: pointer
   &:-moz-placeholder, &::-webkit-input-placeholder
     color: #999

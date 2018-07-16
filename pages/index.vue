@@ -1,34 +1,21 @@
 <template lang="pug">
-<<<<<<< HEAD
-  section.container
-    header
-      headernav.head(:navigations="Navigation")
-      headcont
-    carousel
-    card
-    Ui
-=======
 section.container
   header
     headernav.head(:navigations="Navigation")
   carousel
   kural.kuralgal
   Adhigaram
->>>>>>> a0e8ce9bb7898e1ba190d3ae153859ec1f8ad06f
+  card
+  ui
 </template>
 
 
 <script>
 import Headernav from '~/components/Headernav.vue'
 import Carousel from '~/components/Carousel.vue'
-<<<<<<< HEAD
-import Card from '~/components/Card.vue'
 import Ui from '~/components/Ui.vue'
-
-=======
 import Kural from '~/components/Kural.vue'
 import Adhigaram from '~/components/Adhigaram.vue'
->>>>>>> a0e8ce9bb7898e1ba190d3ae153859ec1f8ad06f
 export default {
   data () {
     return {
@@ -40,13 +27,9 @@ export default {
 components: {
     Headernav,
     Carousel,
-<<<<<<< HEAD
-    Card,
-    Ui
-=======
+    Ui,
     Kural,
     Adhigaram
->>>>>>> a0e8ce9bb7898e1ba190d3ae153859ec1f8ad06f
   }
 }
 
