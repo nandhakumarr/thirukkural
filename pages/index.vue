@@ -4,9 +4,15 @@ section.container
     headernav.head(:navigations="Navigation")
   carousel
   kural.kuralgal
+<<<<<<< HEAD
   Adhigaram
   card
   ui
+=======
+  ui
+  adhigaram
+
+>>>>>>> 62dcc44aabd419da4da37e87033ba7f8541477eb
 </template>
 
 
