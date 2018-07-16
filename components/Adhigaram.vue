@@ -1,25 +1,16 @@
 <template lang="pug">
 .athigaram
-  aside
-    h4 133 அதிகாரங்கள்
-    .Chapters
-      nuxt-link(v-for="(c, i) in Chapters" key="i" to="/")
-        h3 {{ c }}
-    div(v-for="data in myJson")
-    h2 {{ data.Line1 }}
-    h2 {{ data.Line2 }}
-    p
-      nuxt-link(:to="kuralLink(data.Number)") Details
+  .Chapters
+    nuxt-link(v-for="(c, i) in Chapters" key="i" to="/") {{ c }}
 </template>
 
 </template>
 <script>
 import _ from 'lodash'
-import Thirukkural from 'static/thirukkural'
+
 export default {
   data () {
     return {
-      thirukkural: Thirukkural,
       Chapters: [
         'கடவுள் வாழ்த்து',
         'வான் சிறப்பு',
@@ -69,28 +60,20 @@ export default {
 @import 'assets/styles/thirukkural'
 .athigaram
   display: flex
-  flex: 1
-  width: auto
-  height: auto
-  font-family: $heading-font
-  > aside
-    overflow: auto
-    width: 23%
-    height: 650px
-    > h4
-      text-align: left
-      border-bottom: 1px dotted #DCEFB6
-      padding: 1rem
-    .Chapters
-      line-height: 1.5
-      padding: 6px 5px
-      > h5
-        padding: 0.5rem
-        font-weight: normal
-        border-bottom: 1px dotted #DCEFB6
-      a
-        text-decoration: none
-  margin: 1rem
-  h2
-    margin: 1rem
+  padding: 0 $space/2
+  .Chapters
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    align-content: space-evenly
+    flex-direction: row
+    flex-wrap: wrap
+    a
+      text-decoration: none
+      color: #000
+      border: 1px solid #c5c2c2
+      padding: 2rem
+      margin: 1rem
+      width: 15rem
+      text-align: center
 </style>

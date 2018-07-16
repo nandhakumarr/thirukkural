@@ -41,6 +41,7 @@ export default {
   float: left
   margin: 0 120px 0 15px
   #logoimg
+    margin: 0.5rem
     width: 90px
     height: 50px
 .social
@@ -49,7 +50,7 @@ export default {
   align-items: flex-end
   justify-content: flex-end
   align-content: end
-  margin: 39px
+  margin: 17px 37px
   #medialogo
     width: 30px
     height: 30px
