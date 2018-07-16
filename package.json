@@ -13,11 +13,17 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "crawler": "^1.1.4",
+    "lodash": "^4.17.10",
     "nuxt": "^1.0.0",
+<<<<<<< HEAD
     "pug": "^2.0.3",
     "vue-material": "^1.0.0-beta-10.2",
     "vuex": "^3.0.1"
+=======
+    "vue-material": "^1.0.0-beta-10.2"
+>>>>>>> c9f64cca5a10e999ad848a34794519772b06b083
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

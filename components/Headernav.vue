@@ -39,7 +39,7 @@ export default {
   padding: 0 24px
 .header .header-logo
   float: left
-  padding: 30px
+  margin: 0 120px 0 15px
   #logoimg
     width: 90px
     height: 50px
