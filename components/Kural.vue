@@ -1,6 +1,6 @@
 <template lang="pug">
 .page.kural
-  //-.container
+  .container
     .athigaram
       nuxt-link(to="/athigaram") 133 அதிகாரங்கள்
     .palgal
@@ -36,9 +36,22 @@ methods: {
   padding: 0
   .container
     margin: 1rem
+   
+    .athigaram, .palgal, .iyalgal 
+      display: inline-flex
+      margin-left: 7rem
+      text-decoration: none
+      color: #000
+      border: 1px solid #c5c2c2
+      padding: 2rem
+      margin: 1rem
+      width: 15rem
+      text-align: center
     a
       margin: 0 1rem
       text-decoration: none
+       
+
       h3
         color: $black
 </style>
