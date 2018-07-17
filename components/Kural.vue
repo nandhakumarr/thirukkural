@@ -8,7 +8,7 @@
     .iyalgal
       nuxt-link(to="/iyalgal") 13 இயல்கள்
   .container
-    nuxt-link(to="/kuralLink(Number)" v-for="kural in thirukkural" key="kural")
+    nuxt-link(:to="kuralLink(kural.Number)" v-for="kural in thirukkural" key="kural")
       h3 {{ kural.Line1 }}
       h3 {{ kural.Line2 }}
       
@@ -25,11 +25,9 @@ data () {
 },
 methods: {
   kuralLink (num) {
-    return '/kuraldetail' + num
-  }
-
-  }
-
+    return '/kural/' + num
+  },
+}
 }
 </script>
 
