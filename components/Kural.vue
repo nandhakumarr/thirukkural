@@ -1,6 +1,6 @@
 <template lang="pug">
 .page.kural
-  //-.container
+  .container
     .athigaram
       nuxt-link(to="/athigaram") 133 அதிகாரங்கள்
     .palgal
