@@ -2,7 +2,6 @@
 .athigaram
   .Chapters
     nuxt-link(v-for="(c, i) in Chapters" key="i" to="/") {{ c }}
-</template>
 
 </template>
 <script>
