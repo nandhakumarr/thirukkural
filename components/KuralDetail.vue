@@ -1,12 +1,19 @@
 <template lang="pug">
 .page
-  p ncdnfoirer
+  h1.kural(v-if="kural")
+    | {{ kural.Line1 }}
+    br
+    | {{ kural.Line2 }}
 </template>
+
 <script>
 export default {
-
+  props: ['kural'],
+  mounted () {
+  }
 }
 </script>
-<style>
+
+<style lang="sass">
 
 </style>
