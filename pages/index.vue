@@ -3,6 +3,7 @@
   header
     headernav.head(:navigations="Navigation")
   //-carousel
+  Social-Sharing
   kural
   //-ui
   //-adhigaram
@@ -14,6 +15,8 @@ import Headernav from '~/components/Headernav.vue'
 //import Carousel from '~/components/Carousel.vue'
 import Ui from '~/components/Ui.vue'
 import Kural from '~/components/Kural.vue'
+import SocialSharing from '@/components/SocialShare'
+
 export default {
   data () {
     return {
@@ -27,6 +30,7 @@ components: {
     //Carousel,
     Kural,
     Ui,
+    SocialSharing
   }
 }
 

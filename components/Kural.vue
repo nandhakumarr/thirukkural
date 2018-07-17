@@ -11,6 +11,8 @@
     nuxt-link(to="/kuralLink(Number)" v-for="kural in thirukkural" key="kural")
       h3 {{ kural.Line1 }}
       h3 {{ kural.Line2 }}
+      
+       
 </template>
 
 <script>
@@ -25,7 +27,9 @@ methods: {
   kuralLink (num) {
     return '/kuraldetail' + num
   }
-}
+
+  }
+
 }
 </script>
 
