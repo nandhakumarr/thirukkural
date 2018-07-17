@@ -33,10 +33,6 @@ export default {
 <style lang="sass" scoped>
 @import 'assets/styles/thirukkural'
 .header
-  border-bottom: 1px solid #EEE
-  width: 100%
-  margin: 20px auto 0
-  padding: 0 24px
 .header .header-logo
   float: left
   margin: 0 120px 0 15px
