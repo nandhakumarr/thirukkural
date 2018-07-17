@@ -43,6 +43,7 @@ module.exports = {
       }
       //config.resolve.alias['~src'] = projectSrc
       //config.resolve.alias['~utils'] = path.join(projectSrc, 'utils')
-    }
+    },
+    vendor: ['axios']
   }
 }

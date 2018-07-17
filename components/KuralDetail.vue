@@ -1,10 +1,10 @@
 <template lang="pug">
-  .container
-      h2 hai
+.page
+  p ncdnfoirer
 </template>
 <script>
 export default {
-  
+
 }
 </script>
 <style>
