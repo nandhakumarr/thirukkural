@@ -11,8 +11,6 @@
     nuxt-link(:to="kuralLink(kural.Number)" v-for="kural in thirukkural" key="kural")
       h3 {{ kural.Line1 }}
       h3 {{ kural.Line2 }}
-      
-       
 </template>
 
 <script>
@@ -38,8 +36,8 @@ methods: {
   padding: 0
   .container
     margin: 1rem
-   
-    .athigaram, .palgal, .iyalgal 
+
+    .athigaram, .palgal, .iyalgal
       display: inline-flex
       margin-left: 7rem
       text-decoration: none
@@ -52,7 +50,7 @@ methods: {
     a
       margin: 0 1rem
       text-decoration: none
-       
+
 
       h3
         color: $black
