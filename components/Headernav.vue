@@ -2,12 +2,7 @@
 div.header
   div.header-logo
     img#logoimg(:src="logo", alt="")
-    //- div#link
-      router-link.router(v-for="nav in navigations", :key="nav.url", :to="nav.url", :title="nav.title")
-        span.label {{ nav.label }}
-  //-div.search
-    input(type="search", placeholder="தேடல்")
-  //-iframe( width="100%" height="480" src="https://www.youtube.com/embed/A89_enDDJn0" frameborder="0" allow="autoplay encrypted-media" allowfullscreen)
+    
   div.social
     img#medialogo(:src="facebook", alt="")
     img#medialogo(:src="twitter", alt="")
