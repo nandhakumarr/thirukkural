@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     kural () {
-      return _.find(thirukkural, { Number: parseInt(this.id) })
+      return _.find(thirukkural, { id: parseInt(this.id) })
     }
   },
   components: {
