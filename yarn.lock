@@ -5428,6 +5428,10 @@ prettier@^1.7.0:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.12.1.tgz#c1ad20e803e7749faf905a409d2367e06bbe7325"
 
+prettify-json@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/prettify-json/-/prettify-json-0.1.1.tgz#b433fb0f2636b9307ccf522e1914bd63005583b9"
+
 pretty-error@^2.0.2, pretty-error@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"

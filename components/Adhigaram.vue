@@ -1,14 +1,24 @@
 <template lang="pug">
 .athigaram
   .Chapters
+<<<<<<< HEAD
     nuxt-link(v-for="(c,i) in Chapters", key="i", :to="link(i)") {{ c }}
 
+=======
+    //- nuxt-link(v-for="(c,i) in Chapters", key="i", to="/") {{ c }}
+    pre
+      | {{ Thirukkural }}
+>>>>>>> e9c3add968bd27e7686589c2f177f13b00bdcd77
 </template>
 <script>
-import _ from 'lodash'
+import Thirukkural from 'static/thirukkural'
+// import _ from 'lodash'
+import Pretty from 'prettify-json'
+
 export default {
   data () {
     return {
+      Thirukkural: {},
       Chapters: [
         'கடவுள் வாழ்த்து',
         'வான் சிறப்பு',
@@ -55,6 +65,18 @@ export default {
     link (i) {
       return '/adhigaram/' + i
     },
+  },
+  mounted() {
+    // Thirukkural.map(function(a, i) {
+    //   a['athigaram_slug'] = a.adhikaram.replace(/ /ig, '-')
+    //   a['line_1_slug'] = a.line1.replace(/ /ig, '-')
+    //   a['line_2_slug'] = a.line2.replace(/ /ig, '-')
+    //   a['id'] = i + 1
+    // })
+    // this.Thirukkural = Pretty(Thirukkural)
+    // console.log(JSON.stringify(Thirukkural));
+    console.log(Thirukkural);
+
   }
 }
 </script>
