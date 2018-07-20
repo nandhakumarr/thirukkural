@@ -1,11 +1,5 @@
 <template >
-<social-sharing url="http://localhost:3000/kural/1"
-                      title="Thirukkural"
-                      description="Kurals"
-                      quote="Details"
-                      hashtags=""
-                      twitter-user=""
-                      inline-template>
+<social-sharing :url="url" inline-template>
   <div>
       
       <network network="facebook">
@@ -27,10 +21,10 @@
 import SocialSharing from 'vue-social-sharing'
 
 export default {
-    components: {
-        SocialSharing
-    }    
-    
+  props: ['url'],
+  components: {
+    SocialSharing
+  }
 }
 </script>
 

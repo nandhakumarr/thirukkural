@@ -1,7 +1,8 @@
 <template lang="pug">
 div.header
   div.header-logo
-    img#logoimg(:src="logo", alt="")
+    nuxt-link(to="/")
+      img#logoimg(:src="logo", alt="")
     
   div.social
     img#medialogo(:src="facebook", alt="")

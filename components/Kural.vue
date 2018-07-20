@@ -2,7 +2,7 @@
 .page.kural
   .container
     .athigaram
-      nuxt-link(to="/athigaram") 133 அதிகாரங்கள்
+      nuxt-link(to="/athigarams") 133 அதிகாரங்கள்
     .palgal
       nuxt-link(to="/palgal") 3 பால்கள்
     .iyalgal

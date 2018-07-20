@@ -1,7 +1,7 @@
 <template lang="pug">
 .athigaram
   .Chapters
-    nuxt-link(v-for="(c,i) in Chapters", key="i", to="/") {{ c }}
+    nuxt-link(v-for="(c,i) in Chapters", key="i", :to="link(i)") {{ c }}
 
 </template>
 <script>
@@ -51,6 +51,11 @@ export default {
       ],
     }
   },
+  methods:{
+    link (i) {
+      return '/adhigaram/' + i
+    },
+  }
 }
 </script>
 
