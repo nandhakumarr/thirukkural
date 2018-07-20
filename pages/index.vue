@@ -2,18 +2,11 @@
 .page
   header
     headernav.head(:navigations="Navigation")
-
-  Social-Sharing
-  kural
-  
- 
 </template>
 
 
 <script>
 import Headernav from '~/components/Headernav.vue'
-import Kural from '~/components/Kural.vue'
-import SocialSharing from '@/components/SocialShare'
 
 export default {
   data () {
@@ -24,9 +17,7 @@ export default {
     }
   },
   components: {
-    Headernav,
-    Kural,
-    SocialSharing
+    Headernav
   }
 }
 
