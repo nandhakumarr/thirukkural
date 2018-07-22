@@ -4,14 +4,15 @@
     img.menu(src="/agaram.svg")
   .mask(v-if="open" @click="hideMenu()")
   .popup(v-if="open")
-    nuxt-link(to="" v-for="(v, k) in adhigarams", :key="k")
+    nuxt-link(v-for="a in adhigarams", :key="a.id", :to="a.slug")
       ul.items-list
-        li {{ v }}
+        li {{ a.name }}
 </template>
 
 <script>
 import Thirukkural from 'static/thirukkural'
 import _ from 'lodash'
+
 export default {
   data () {
     return {
@@ -27,8 +28,14 @@ export default {
       this.open = false
     }
   },
-  mounted() {
-    this.adhigarams = _.uniq(_.map(Thirukkural, 'adhigaram'))
+  mounted () {
+    this.adhigarams = _.uniqBy(_.map(Thirukkural, function (t) {
+      return {
+        name: t.adhigaram,
+        slug: t.athigaram_slug,
+        id: t.id
+      }
+    }), 'name')
   },
 components: {
 }

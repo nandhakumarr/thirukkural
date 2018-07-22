@@ -1,7 +1,7 @@
 <template lang="pug">
 .page
   .kural
-    nuxt-link
+    h1 nfdjnvfinov
 </template>
 
 <script>
