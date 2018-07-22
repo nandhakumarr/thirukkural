@@ -32,7 +32,7 @@ export default {
     this.adhigarams = _.uniqBy(_.map(Thirukkural, function (t) {
       return {
         name: t.adhigaram,
-        slug: t.athigaram_slug,
+        slug: t.adhigaram_slug,
         id: t.id
       }
     }), 'name')

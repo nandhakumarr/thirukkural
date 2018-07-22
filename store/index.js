@@ -8,9 +8,9 @@ const store = () => {
       kural: null
     },
     mutations: {
-      setKuralByAdhigaram (state, athigaram_slug) {
+      setKuralByAdhigaram (state, adhigaram_slug) {
         let kural = _.find(state.thirukkural, function(kural) {
-          return kural.athigaram_slug === athigaram_slug
+          return kural.adhigaram_slug === adhigaram_slug
         })
         state.kural = kural
       },
