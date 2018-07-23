@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="100px" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>iPad Pro Portrait</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#A16B05" offset="0%"></stop>
+            <stop stop-color="#A14F05" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPad-Pro-Portrait">
+            <circle id="Oval" fill="url(#radialGradient-1)" cx="140" cy="50" r="40"></circle>
+            <rect id="Rectangle" fill="#333333" x="55" y="45" width="40" height="10" rx="5"></rect>
+            <rect id="Rectangle" fill="#333333" x="75" y="59" width="20" height="10" rx="5"></rect>
+            <rect id="Rectangle" fill="#333333" x="35" y="31" width="60" height="10" rx="5"></rect>
+            <text id="அ" font-family="TamilSangamMN-Bold, Tamil Sangam MN" font-size="48" font-weight="bold" letter-spacing="-2" fill="#FFFFFF">
+                <tspan x="118" y="60">அ</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

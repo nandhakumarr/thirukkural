@@ -7,8 +7,8 @@
 
 
 <script>
-import Headernav from '~/components/Headernav.vue'
-import Kural from '~/components/Kural.vue'
+import Headernav from '~/components/Headernav'
+
 
 export default {
   data () {
@@ -20,7 +20,6 @@ export default {
   },
   components: {
     Headernav,
-    Kural
   }
 }
 

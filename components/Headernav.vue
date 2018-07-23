@@ -1,9 +1,9 @@
 <template lang="pug">
 div.header
   div.header-logo
+    adhigaram-list.menu
     nuxt-link(to="/")
       img#logoimg(:src="logo", alt="")
-    
   div.social
     img#medialogo(:src="facebook", alt="")
     img#medialogo(:src="twitter", alt="")
@@ -12,6 +12,8 @@ div.header
 </template>
 
 <script>
+import AdhigaramList from '@/components/AdhigaramList'
+
 export default {
   props: ['navigations'],
   data () {
@@ -22,6 +24,9 @@ export default {
       instagram: 'http://pngimg.com/uploads/instagram/instagram_PNG3.png',
       linkedIn: 'https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-256.png'
     }
+  },
+  components: {
+    AdhigaramList
   }
 }
 </script>
@@ -30,8 +35,13 @@ export default {
 @import 'assets/styles/thirukkural'
 .header
 .header .header-logo
+  display: flex
   float: left
   margin: 0 120px 0 15px
+  .menu
+    width: 100px
+    height: 60px
+    cursor: pointer
   #logoimg
     margin: 0.5rem
     width: 90px
