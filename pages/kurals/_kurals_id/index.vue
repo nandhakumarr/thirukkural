@@ -2,25 +2,34 @@
 .page
   header
     headernav.head(:navigations="Navigation")
-    kural
+  p(v-for="")  
 </template>
 
 
 <script>
-import Headernav from '~/components/Headernav.vue'
-import Kural from '~/components/Kural.vue'
-
+import Headernav from '@/components/Headernav.vue'
+import Thirukkural from 'static/thirukkural'
 export default {
   data () {
     return {
-      Navigation: [
+       Navigation: [
 
-      ]
+      ],
+      id:null,
     }
+  },
+  created(){
+    this.id=this.$route.params.kurals_i
+    console.log(this.id)
+  },
+  computed:{
+    kurals(){
+      return _.find(thirukkural, { id: parseInt(this.id) })
+    }
+  
   },
   components: {
     Headernav,
-    Kural
   }
 }
 
