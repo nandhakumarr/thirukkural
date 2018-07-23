@@ -2,12 +2,13 @@
 .page
   header
     headernav.head
+  vilakkam  
 </template>
 
 
 <script>
 import Headernav from '~/components/Headernav'
-
+import Vilakkam from '~/components/Vilakkam'
 
 export default {
   data () {
@@ -19,6 +20,7 @@ export default {
   },
   components: {
     Headernav,
+    Vilakkam
   }
 }
 

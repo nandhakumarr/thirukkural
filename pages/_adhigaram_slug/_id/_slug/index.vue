@@ -7,6 +7,13 @@
       br
       p {{ kural.line1 }}
       p {{ kural.line2 }}
+      h5  வரதராசனார்
+        p {{ kural.mv }}
+      h5
+        p {{ kural.sp }}
+      h5   
+        p {{ kural.mk }}
+
 </template>
 
 <script>
