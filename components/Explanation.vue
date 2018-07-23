@@ -1,11 +1,11 @@
 <template lang="pug">
 .page
-  .kural
-    h1 nfdjnvfinov
+  .explanation
+    
 </template>
 
 <script>
-import Thirukkural from 'static/thirukkural' 
+import Thirukkural from 'static/thirukkural'
 export default {
   data(){
     return{
@@ -13,9 +13,7 @@ export default {
     }
   },
   methods:{
-    kura (i) {
-        return '/kurals/' + i
-    }
+
   }
 
 }

@@ -3,7 +3,7 @@
   a(@click="toggleMenu()")
     img.menu(src="/agaram.svg")
   .mask(v-if="open" @click="hideMenu()")
-  .popup(v-if="open")
+  .popup(:class="{ active: open }")
     nuxt-link(v-for="a in adhigarams", :key="a.id", :to="a.slug")
       ul.items-list
         li {{ a.name }}
@@ -57,8 +57,6 @@ components: {
     top: 0
     z-index: 99
     height: 100%
-    -webkit-transition: -webkit-transform 0.5s
-    transition: transform 0.5s
     .menu
       width: 100px
       height: 60px
@@ -69,13 +67,16 @@ components: {
     right: 0
     bottom: 0
   .popup
-    width: 20rem
+    width: 0rem
+    transition: width .2s
+    transition-timing-function: ease-out
     background: linear-gradient(to right, rgb(62, 81, 81), rgb(222, 203, 164))
     top: 0
     box-shadow: 0 0 0.25rem 0.125rem rgba($neutral, 0.2)
-    overflow-y: scroll
-    transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    overflow-y: hidden
     height: 100vh
+    &.active
+      width: 20rem
     a
       text-decoration: none
       color: $white
