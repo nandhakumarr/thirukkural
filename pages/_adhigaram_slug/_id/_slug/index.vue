@@ -1,7 +1,6 @@
 <template lang="pug">
 .page
-  header
-    headernav.head(:navigations="Navigation")
+  headernav.head(:navigations="Navigation")
   main
     .kural(v-if="kural")
       h3 {{ kural.adhigaram }}
@@ -33,3 +32,14 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" scoped>
+.page
+  display: flex
+  > header
+  > main
+    flex: 1
+    .kural
+      margin: 4rem 1rem
+</style>
+
