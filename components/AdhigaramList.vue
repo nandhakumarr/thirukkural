@@ -73,7 +73,7 @@ components: {
     background: linear-gradient(to right, rgb(62, 81, 81), rgb(222, 203, 164))
     top: 0
     box-shadow: 0 0 0.25rem 0.125rem rgba($neutral, 0.2)
-    overflow-y: hidden
+    overflow-y: scroll
     height: 100vh
     &.active
       width: 20rem
