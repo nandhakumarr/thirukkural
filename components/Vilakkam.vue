@@ -8,7 +8,7 @@
     </div>
     <div class="vilakkams">
        <h2>
-          எழுத்துக்கள் எல்லாம் அகரத்தில் தொடங்குகின்றன; (அது போல) உலகம் கடவுளில் தொடங்குகிறது.       
+          எழுத்துக்கள் எல்லாம் அகரத்தில் தொடங்குகின்றன; (அது போல) உலகம் கடவுளில் தொடங்குகிறது.
         </h2>
         <div class="author">சாலமன் பாப்பையா</div>
     </div>
@@ -19,12 +19,12 @@
        <div class="author">மு.கருணாநிதி</div>
     </div>
     <div style="text-align:center">
-      <span class="dot active"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </div>
-  
+
 
 </template>
 <style>
