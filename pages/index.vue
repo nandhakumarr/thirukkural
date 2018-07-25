@@ -2,13 +2,11 @@
 .page
   header
     headernav.head
-  vilakkam
 </template>
 
 
 <script>
 import Headernav from '~/components/Headernav'
-import Vilakkam from '~/components/Vilakkam'
 import meta from 'static/details'
 import _ from 'lodash'
 
@@ -21,8 +19,7 @@ export default {
     }
   },
   components: {
-    Headernav,
-    Vilakkam
+    Headernav
   },
   mounted () {
     let self = this

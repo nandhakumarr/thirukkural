@@ -8,7 +8,7 @@
       .section
         p {{ kural.line1 }}
         p {{ kural.line2 }}
-      explanation.explanation
+    //-explanation.explanation
 </template>
 
 <script>
@@ -44,27 +44,23 @@ export default {
   > main
     flex: 1
     .kural
-      width: 50rem
-      margin: 3rem auto
-      border: 60px solid #eee
-      border-image-source: linear-gradient(#ffc371, #ffc371)
-      border-image-slice: 10
-      border-left: 1px solid #ffc371
-      border-right: 1px solid #ffc371
-      .btn
-        margin: 1rem
-        border-radius: none
-        color: #333
-        font-size: 1rem
-        background: #ffc371
-      > h1, h3
-        color: #000
+      font-size: 2rem
+      text-align: left
+      max-width: 60rem
+      margin: 6rem auto 6rem auto
+      padding: 1rem
       > h3
-        margin: 1rem
-      > .section
-        margin: 1rem
-        font-size: 1.5rem
-      > .explanation
-        margin: 1rem
+        color: #000
+      .btn
+        padding: 0.5rem
+        margin-top: 1rem
+        background: #eee
+        color: #000
+        &:hover
+          background: #333333
+          color: #fff
+    .section
+      p
+        margin-top: 2rem
 </style>
 
