@@ -3,16 +3,18 @@
   headernav.head(:navigations="Navigation")
   main
     .kural(v-if="kural")
-      h3 பால்கள் / இயல்கள்
-      button.btn {{ kural.adhigaram }}
+      .adhigaram
+        h3 {{ kural.paal }} / {{ kural.iyal }}
+        h3 {{ kural.adhigaram }}
       .section
         p {{ kural.line1 }}
         p {{ kural.line2 }}
+        //-img(src="/next.png" alt="" @click="")
     //-explanation.explanation
 </template>
 
 <script>
-import thirukkural from 'static/thirukkural'
+import thirukkural from 'static/kural'
 import Headernav from '~/components/Headernav'
 import Explanation from '~/components/Explanation'
 
@@ -38,29 +40,33 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import 'assets/styles/thirukkural'
+
 .page
   display: flex
   > header
   > main
+    background: linear-gradient(to bottom right,  #f9d423 0%, #ff4e50 100%)
     flex: 1
     .kural
       font-size: 2rem
       text-align: left
       max-width: 60rem
       margin: 6rem auto 6rem auto
-      padding: 1rem
-      > h3
-        color: #000
-      .btn
-        padding: 0.5rem
-        margin-top: 1rem
-        background: #eee
-        color: #000
-        &:hover
-          background: #333333
-          color: #fff
+      padding: 2rem
+      background: #FFF
+      color: #000
+      border: 1px solid #EEE
+      box-shadow: 0 0 0.25rem 0.125rem rgba($neutral, 0.2)
+      .adhigaram
+        display: flex
+        justify-content: space-between
     .section
+      word-spacing: 0.7rem
       p
         margin-top: 2rem
+        font-weight: bold
+      img
+        margin-left: 700px
 </style>
 

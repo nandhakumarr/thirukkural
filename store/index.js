@@ -5,7 +5,8 @@ const store = () => {
   const store = new Vuex.Store({
     state: {
       thirukkural: null,
-      kural: null
+      kural: null,
+      currentKural: 0
     },
     mutations: {
       setKuralByAdhigaram (state, adhigaram_slug) {
@@ -16,6 +17,9 @@ const store = () => {
       },
       setKural (state, kural) {
         state.thirukkural = kural
+      },
+      updateCurrentKural (state, kural) {
+        state.currentKural++
       }
     }
   })

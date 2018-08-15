@@ -70,7 +70,6 @@ components: {
     width: 0rem
     transition: width .2s
     transition-timing-function: ease-out
-    background: linear-gradient(to right, rgb(62, 81, 81), rgb(222, 203, 164))
     top: 0
     box-shadow: 0 0 0.25rem 0.125rem rgba($neutral, 0.2)
     overflow-y: scroll
@@ -79,7 +78,7 @@ components: {
       width: 20rem
     a
       text-decoration: none
-      color: $white
+      color: #000
       white-space: nowrap
       position: relative
       z-index: 1

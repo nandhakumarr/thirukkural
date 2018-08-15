@@ -33,14 +33,14 @@ export default {
   methods: {
     findDetail (adhigaram) {
       let detail = {}
-      _.each(meta, s => {
-        // console.log(s.tamil, 's')
+      _.each(meta.section, s => {
+        console.log(s.tamil, 's')
         _.each(s.detail, d => {
-          // console.log(d.name, 'd')
+          console.log(d.name, 'd')
           _.each(d.chapterGroup.detail, e => {
-            // console.log(e.name, 'cg')
+            console.log(e.name, 'cg')
             _.each(e.chapters, c => {
-              // console.log(e.name, 'c')
+              console.log(e.name, 'c')
               _.each(c, a => {
                 if (a.name == adhigaram) {
                   detail = {
