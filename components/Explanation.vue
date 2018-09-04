@@ -1,61 +1,75 @@
 <template lang="pug">
-.page
-  .explanation
-    .carousel
-      span.dot(class="active" @click="show = !show")
-        div(v-if="show")
-          .author மு.வரதராசனார்
-          h2
-            | எழுத்துக்கள் எல்லாம் அகரத்தை அடிப்படையாக கொண்டிருக்கின்றன. அதுபோல உலகம் கடவுளை அடிப்படையாக கொண்டிருக்கிறது.
-      span.dot(@click="show = !show")
-        //-div(v-if="show")
-          .author சாலமன் பாப்பையா
-          h2
-            | எழுத்துக்கள் எல்லாம் அகரத்தில் தொடங்குகின்றன; (அது போல) உலகம் கடவுளில் தொடங்குகிறது.
-      span.dot(@click="show = !show")
-        //-div(v-if="show")
-          .author மு.கருணாநிதி
-          h2
-            | அகரம் எழுத்துக்களுக்கு முதன்மை; ஆதிபகவன், உலகில் வாழும் உயிர்களுக்கு முதன்மை.
+.explanation 
+  
+  .tab 
+    h4 விளக்கம் : 
+    .tab-header
+      a(@click="select('mv')", :class="{active: isSelected('mv')}") மு.வரதராசனார்
+      a(@click="select('sp')", :class="{active: isSelected('sp')}") சாலமன்பாப்பையா
+      a(@click="select('mk')", :class="{active: isSelected('mk')}") மு.கருணாநிதி
+    .tab-content
+      | {{ kural[selected] }}  
 </template>
 
 <script>
 import Thirukkural from 'static/thirukkural'
+import thirukkural from 'static/kural'
 export default {
-  data(){
+  data() {
     return{
       thirukkural: Thirukkural,
-      show: false
+      show: false,
+      selected: 'mv'
     }
   },
-  methods:{
-
+  fetch ({ store, params }) {
+    store.commit('setKural',thirukkural)
+    store.commit('setKuralByAdhigaram', params.adhigaram_slug)
+    return params
+  },
+  computed: {
+    kural () {
+      return this.$store.state.kural
+    }
+  },
+  methods: {
+    select(urai) {
+      this.selected = urai
+    },
+    isSelected(urai) {
+      return this.selected === urai
+    }
   }
-
 }
 </script>
 
 <style lang="sass" scoped>
-.slides
-  max-width: 800px
-  position: relative
-  margin: auto
-  .slider-enter-active, .slider-leave-active
-    transition: opacity .3s ease
-  .slider-enter, .slider-leave-to
-    opacity: 0
-.carousel
-  display: flex
-  flex-direction: row
-.dot
-  cursor: pointer
-  height: 15px
-  width: 15px
-  margin: 0 2px
-  background-color: #bbb
-  border-radius: 50%
-  display: inline-block
-  &.active
-  &:hover
-    background-color: #ca2323
+.explanation
+  .tab
+    h4
+      font-size: 1.125rem
+    .tab-header
+      display: flex
+      padding: 0.5rem 0 0
+      
+      a
+        display: inline-block
+        margin-right: 1rem
+        font-weight: bold
+        font-size: 1.125rem
+        opacity: 0.6
+        cursor: pointer
+        &:hover
+          opacity: 0.8
+        &.active
+          opacity: 1
+    .tab-content
+      padding: 1rem 0
+      font-size: 1.1rem
+
+    h2
+      font-weight: bold
+      padding: 0.3rem
+
+      
 </style>

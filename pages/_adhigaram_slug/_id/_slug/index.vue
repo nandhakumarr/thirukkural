@@ -9,8 +9,8 @@
       .section
         p {{ kural.line1 }}
         p {{ kural.line2 }}
-        //-img(src="/next.png" alt="" @click="")
-    //-explanation.explanation
+        
+      explanation
 </template>
 
 <script>
@@ -53,7 +53,7 @@ export default {
       text-align: left
       max-width: 60rem
       margin: 6rem auto 6rem auto
-      padding: 2rem
+      padding: 3rem
       background: #FFF
       color: #000
       border: 1px solid #EEE
