@@ -4,7 +4,7 @@
     img.menu(src="/agaram.svg")
   .mask(v-if="open" @click="hideMenu()")
   .popup(:class="{ active: open }")
-    nuxt-link(v-for="a in adhigarams", :key="a.id", :to="a.slug")
+    nuxt-link(v-for="a in adhigarams", :key="a.id", :to="`/${a.slug}`")
       ul.items-list
         li {{ a.name }}
 </template>

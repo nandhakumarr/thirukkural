@@ -15,6 +15,12 @@ const store = () => {
         })
         state.kural = kural
       },
+      setKuralById (state, id) {
+        let kural = _.find(state.thirukkural, function(kural) {
+          return kural.id == id
+        })
+        state.kural = kural
+      },
       setKural (state, kural) {
         state.thirukkural = kural
       },

@@ -18,6 +18,7 @@ module.exports = {
   css: [
     '@/assets/styles/thirukkural.sass'
   ],
+  mode: 'spa',
   /*
   ** Customize the progress bar color
   */
