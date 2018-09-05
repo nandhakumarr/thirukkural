@@ -1,6 +1,6 @@
 <template lang="pug">
 .page
-  headernav.head(:navigations="Navigation")
+  headernav.head
   main
     .kural(v-if="kural")
       .adhigaram
@@ -9,7 +9,7 @@
       .section
         p {{ kural.line1 }}
         p {{ kural.line2 }}
-        
+
       explanation
 </template>
 
