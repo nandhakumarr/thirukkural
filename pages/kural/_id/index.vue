@@ -2,22 +2,14 @@
 .page
   headernav.head
   main
-    h1 las;laksd;
-    .kural(v-if="kural")
-      .adhigaram
-        h3 {{ kural.paal }} / {{ kural.iyal }}
-        h3 {{ kural.adhigaram }}
-      .section
-        p {{ kural.line1 }}
-        p {{ kural.line2 }}
+    kural(:kural="kural")
 
-      explanation
 </template>
 
 <script>
 import thirukkural from 'static/kural'
 import Headernav from '~/components/Headernav'
-import Explanation from '~/components/Explanation'
+import Kural from '~/components/Kural'
 
 import _ from 'lodash'
 import { mapState } from 'vuex'
@@ -25,7 +17,7 @@ import { mapState } from 'vuex'
 export default {
   fetch ({ store, params }) {
     store.commit('setKural',thirukkural)
-    store.commit('setKuralById', params.kural_id)
+    store.commit('setKuralById', params.id)
     return params
   },
   computed: {
@@ -35,7 +27,7 @@ export default {
   },
   components: {
     Headernav,
-    Explanation
+    Kural
   }
 }
 </script>
